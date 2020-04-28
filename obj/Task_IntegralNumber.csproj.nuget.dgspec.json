@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dumik\\source\\repos\\Task_IntegralNumber\\Task_IntegralNumber.csproj": {}
+    "C:\\Users\\dumik\\Desktop\\Projects\\Task_IntegralNumber\\Task_IntegralNumber.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dumik\\source\\repos\\Task_IntegralNumber\\Task_IntegralNumber.csproj": {
+    "C:\\Users\\dumik\\Desktop\\Projects\\Task_IntegralNumber\\Task_IntegralNumber.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dumik\\source\\repos\\Task_IntegralNumber\\Task_IntegralNumber.csproj",
+        "projectUniqueName": "C:\\Users\\dumik\\Desktop\\Projects\\Task_IntegralNumber\\Task_IntegralNumber.csproj",
         "projectName": "Task_IntegralNumber",
-        "projectPath": "C:\\Users\\dumik\\source\\repos\\Task_IntegralNumber\\Task_IntegralNumber.csproj",
+        "projectPath": "C:\\Users\\dumik\\Desktop\\Projects\\Task_IntegralNumber\\Task_IntegralNumber.csproj",
         "packagesPath": "C:\\Users\\dumik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dumik\\source\\repos\\Task_IntegralNumber\\obj\\",
+        "outputPath": "C:\\Users\\dumik\\Desktop\\Projects\\Task_IntegralNumber\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
