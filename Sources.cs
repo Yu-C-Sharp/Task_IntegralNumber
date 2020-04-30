@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using static System.Console;
+using IntegralNumber;
 
-namespace Methods
+namespace Methodes
 {
     static class Sources
     {
@@ -20,55 +21,63 @@ namespace Methods
             catch (Exception ex) { WriteLine($"{ex.Message}"); }
             return false;
         }
-        public static void Squaring(int Input, List<int> Result)
+        public static void Squaring(Number obj, List<int>Temp)
         {
-            if (Input < 5)
+            if (obj.Num < 5)
             {
                 WriteLine("No solution...");
+                obj.Result = "No Solution";
                 return;
-            }
+            }          
             int input_square;
-            for (int i = Input - 1; i > 0; --i)
+            for (int i = obj.Num - 1; i > 0; --i)
             {
-                Result.Clear();
-                input_square = (int)(Math.Pow(Input, 2) - Math.Pow(i, 2));
-                Result.Add(i);
+                Temp.Clear();
+                input_square = (int)(Math.Pow(obj.Num, 2) - Math.Pow(i, 2));
+                Temp.Add(i);
                 for (int j = i - 1; j > 0; --j)
                 {
 
                     if (input_square - j * j > 0)
                     {
                         input_square -= j * j;
-                        Result.Add(j);
+                        Temp.Add(j);
                     }
                     else if (input_square - j * j == 0)
                     {
-                        Result.Add(j);
+                        Temp.Add(j);
+                        Temp.Reverse();
+                        foreach(int item in Temp)
+                        {
+                            if (item == Temp[Temp.Count - 1]) obj.Result += item.ToString();
+                            else obj.Result += item.ToString() + ",";
+                        }
                         return;
                     }
-                    if (j - 1 == 0 && Result[1] > 1)
+                    if (j - 1 == 0 && Temp[1] > 1)
                     {
-                        j = Result[1];
-                        Result.Clear();
-                        Result.Add(i);
-                        input_square = (int)(Math.Pow(Input, 2) - Math.Pow(i, 2));
+                        j = Temp[1];
+                        Temp.Clear();
+                        Temp.Add(i);
+                        input_square = (int)(Math.Pow(obj.Num, 2) - Math.Pow(i, 2));
                     }
                     else continue;
                 }
             }
             WriteLine("No solution...");
-            Result.Clear();
+            obj.Result = "No Solution";
+            Temp.Clear();
         }
-        public static void ShowResult(List<int> Result)
+        public static void ShowResult(List<int>Temp)
         {
-            Result.Reverse();
             Write("Solution : [");
-            foreach (int item in Result)
+            foreach (int item in Temp)
             {
-                if (item == Result[Result.Count - 1]) Write(item);
+                if (item == Temp[Temp.Count - 1]) Write(item);
                 else Write(item + ",");
             }
             Write("]\n");
         }
+       
     }
 }

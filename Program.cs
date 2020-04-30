@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using static System.Console;
-using Methods;
+using Methodes;
+using IntegralNumber;
+using Database;
+
 
 namespace Task_IntegralNumber
 {
@@ -9,19 +13,21 @@ namespace Task_IntegralNumber
     {  
         static void Main(string[] args)
         {
+            DbMethodes.StartInitDb();
+            DbMethodes.UploadFromDbLastFiveResults();
             string input;
-            int Input;
-            List<int> Result = new List<int>();
-            while(true)
+            List<int> Temp = new List<int>();
+            while (true)
             {
                 Write("Enter a positive integral number...");
                 input = ReadLine();
                 if (Sources.ExceptionInput(input)) break;
                 else WriteLine("Come on! Let's try again...");
             }
-            Input = Convert.ToInt32(input);
-            Sources.Squaring(Input, Result);
-            Sources.ShowResult(Result);
+            Number Input = new Number() { Num = Convert.ToInt32(input) };
+            Sources.Squaring(Input, Temp);
+            DbMethodes.LoadToDb(Input);
+            Sources.ShowResult(Temp);
             ReadKey();
         }
     }
