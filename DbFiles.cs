@@ -19,6 +19,16 @@ namespace Database
         {
             Database.EnsureCreated();
         }
+	protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Number>().HasData(
+                new Number[]
+                {
+                new Number { NumberID=1, Num = 1, Result = "No Solution"},
+                new Number { NumberID=2, Num = 2, Result = "No Solution"},
+                new Number { NumberID=3, Num = 3, Result = "No Solution"}
+                });
+        }
     }
     static class CreateOptions
     {
@@ -34,9 +44,9 @@ namespace Database
             return options;
         }
     }
-    static class DbMethodes
+    class DbMethodes
     {
-        public static void LoadToDb(Number obj)
+        public void LoadToDb(Number obj)
         {
             DbContextOptions<ApplicationContext> options = CreateOptions.JSON_FILE_Configuration();
             using (ApplicationContext db = new ApplicationContext(options))
@@ -45,38 +55,26 @@ namespace Database
                 db.SaveChanges();
             }
         }
-        public static void StartInitDb()
+        public void UploadFromDbLastFiveResults()
         {
             DbContextOptions<ApplicationContext> options = CreateOptions.JSON_FILE_Configuration();
             using (ApplicationContext db = new ApplicationContext(options))
             {
-                Number Temp = db.Numbers.FirstOrDefault();
-                if (Temp == null)
-                {
-                    Number First = new Number() { Num = 1, Result = "No Solution" };
-                    Number Second = new Number() { Num = 2, Result = "No Solution" };
-                    Number Third = new Number() { Num = 3, Result = "No Solution" };
-                    db.AddRange(First, Second, Third);
-                    db.SaveChanges();
-                }
-            }
-        }
-        public static void UploadFromDbLastFiveResults()
-        {
-            DbContextOptions<ApplicationContext> options = CreateOptions.JSON_FILE_Configuration();
-            using (ApplicationContext db = new ApplicationContext(options))
-            {
-                List<Number> number = db.Numbers.ToList();
+                /////   Teacher's Solution
+               /* var lastFiveResult = db.Numbers.OrderBy(b => b.NumberID).Skip(Math.Max(0, db.Numbers.OrderBy(b => b.NumberID).Count() - 5));
                 WriteLine("The last five results of the program :");
-                for (int i = 0, j = 1; i < 5; ++i, ++j)
-                {
-                    if (number.Count() - j >= 0) WriteLine($"Number - {number[number.Count() - j].Num} : Solution - [{number[number.Count() - j].Result}]");
-                    else
-                    {
-                        WriteLine("There are no more results in Database...");
-                        break;
-                    }
-                }
+                foreach (Number item in lastFiveResult)
+                    WriteLine($"Id - {item.NumberID} :: Number - {item.Num} : Solution - [{item.Result}]");
+                if (lastFiveResult.Count() < 5) WriteLine("There are no more results in Database...");*/
+
+                  ///// My Solution
+                IEnumerable<Number> query = from item in db.Numbers.OrderByDescending(key => key.NumberID)                                           
+                                             where item.NumberID < 6
+                                             select item;
+                WriteLine("The last five results of the program :");
+                foreach (Number item in query)
+                    WriteLine($"Id - {item.NumberID} :: Number - {item.Num} : Solution - [{item.Result}]");
+                if (query.Count() < 5) WriteLine("There are no more results in Database..."); 
             }
         }
     }
