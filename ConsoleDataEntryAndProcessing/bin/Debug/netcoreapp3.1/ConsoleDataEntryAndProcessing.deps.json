@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ConsoleDataEntryAndProcessing/1.0.0": {
+        "dependencies": {
+          "ClassLibraryNumber": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleDataEntryAndProcessing.dll": {}
+        }
+      },
+      "ClassLibraryNumber/1.0.0": {
+        "runtime": {
+          "ClassLibraryNumber.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleDataEntryAndProcessing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ClassLibraryNumber/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

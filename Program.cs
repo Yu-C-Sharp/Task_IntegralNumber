@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Linq;
-using System.Collections.Generic;
 using static System.Console;
-using Methodes;
-using IntegralNumber;
-using Database;
+using DatabaseConnection;
+using ConsoleDataEntryAndProcessing;
 
 
 namespace Task_IntegralNumber

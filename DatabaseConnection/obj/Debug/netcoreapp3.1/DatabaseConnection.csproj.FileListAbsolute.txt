@@ -1,0 +1,13 @@
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\ClassLibraryNumber.dll
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.csprojAssemblyReference.cache
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.AssemblyInfoInputs.cache
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.AssemblyInfo.cs
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\AppSettings.json
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\DatabaseConnection.deps.json
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\DatabaseConnection.dll
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\DatabaseConnection.pdb
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\bin\Debug\netcoreapp3.1\ClassLibraryNumber.pdb
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.csproj.CoreCompileInputs.cache
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.csproj.CopyComplete
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.dll
+C:\Users\dumik\Desktop\Projects\DatabaseConnection\obj\Debug\netcoreapp3.1\DatabaseConnection.pdb
