@@ -1,9 +1,0 @@
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\bin\Debug\netcoreapp3.1\ClassLibraryNumber.deps.json
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\bin\Debug\netcoreapp3.1\ClassLibraryNumber.dll
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\bin\Debug\netcoreapp3.1\ClassLibraryNumber.pdb
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.csproj.CoreCompileInputs.cache
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.AssemblyInfoInputs.cache
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.AssemblyInfo.cs
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.dll
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.pdb
-C:\Users\dumik\Desktop\Projects\ClassLibraryNumber\obj\Debug\netcoreapp3.1\ClassLibraryNumber.csprojAssemblyReference.cache
