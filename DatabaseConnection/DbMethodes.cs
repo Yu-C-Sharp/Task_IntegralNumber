@@ -19,7 +19,7 @@ namespace DatabaseConnection
                 db.SaveChanges();
             }
         }
-        public void UploadFromDbLastFiveResults()
+        public List<Number> UploadFromDbLastFiveResults()
         {
             using (ApplicationContext db = new ApplicationContext(CreateOptions.JSON_FILE_Configuration()))
             {
@@ -40,6 +40,7 @@ namespace DatabaseConnection
                 foreach (Number item in query)
                     WriteLine($"Id - {item.NumberID} :: Number - {item.Num} : Solution - [{item.Result}]");
                 if (query.Count() < 5) WriteLine("There are no more results in Database...");
+                return query.ToList();
             }
         }
     }

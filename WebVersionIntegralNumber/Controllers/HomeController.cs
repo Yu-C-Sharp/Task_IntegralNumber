@@ -29,11 +29,8 @@ namespace WebVersionIntegralNumber.Controllers
         ApplicationContext db = new ApplicationContext(CreateOptions.JSON_FILE_Configuration());
         public IActionResult Index()
         {
-
-            IEnumerable<Number> query = from item in db.Numbers.OrderByDescending(key => key.NumberID)
-                                        where item.NumberID < 6
-                                        select item;
-            ViewBag.Numbers = query;
+            DbMethodes query = new DbMethodes();
+            ViewBag.Numbers = query.UploadFromDbLastFiveResults();
             return View();
         }
         [HttpGet]
