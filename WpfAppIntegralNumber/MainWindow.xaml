@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfAppIntegralNumber.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppIntegralNumber"
+        mc:Ignorable="d"
+        Title="Integral Number" Height="650" Width="1000">
+    <Grid Background="Salmon">
+        <TextBlock x:Name="Tittle1" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" >Here are the last five results of the program...</TextBlock>
+        <TextBlock x:Name="Output" Background="White" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="50"></TextBlock>
+        <TextBlock x:Name="Tittle2" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="220">Enter a positive number...</TextBlock>
+        <TextBox x:Name="Input" Width="208" Height="35" VerticalAlignment="Top" Margin="250" />
+        <Button x:Name="button" Content="To Calculate" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="208" Click="button_Click"/>
+        <TextBlock x:Name="Tittle3" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 100 0 0">Result :</TextBlock>
+        <TextBox x:Name="Result" Width="208" Height="35" Margin="0 160 0 0" TextChanged="Result_TextChanged" />
+    </Grid>
+</Window>

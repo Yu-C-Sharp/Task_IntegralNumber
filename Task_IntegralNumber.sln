@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_IntegralNumber", "Task_IntegralNumber.csproj", "{5D4AEDEB-4E25-4F72-8CDB-7E86A1ABECD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryNumber", "..\ClassLibraryNumber\ClassLibraryNumber.csproj", "{8DC130D6-18D9-48C7-BC3B-223BBB1BBB92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibraryNumber", "..\ClassLibraryNumber\ClassLibraryNumber.csproj", "{8DC130D6-18D9-48C7-BC3B-223BBB1BBB92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDataEntryAndProcessing", "..\ConsoleDataEntryAndProcessing\ConsoleDataEntryAndProcessing.csproj", "{B13C5492-F5E1-4A54-B5F2-24DADC0135E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleDataEntryAndProcessing", "..\ConsoleDataEntryAndProcessing\ConsoleDataEntryAndProcessing.csproj", "{B13C5492-F5E1-4A54-B5F2-24DADC0135E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseConnection", "..\DatabaseConnection\DatabaseConnection.csproj", "{11387E47-6AC0-41D1-94DD-73F9A7E0A86A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatabaseConnection", "..\DatabaseConnection\DatabaseConnection.csproj", "{11387E47-6AC0-41D1-94DD-73F9A7E0A86A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebVersionIntegralNumber", "..\WebVersionIntegralNumber\WebVersionIntegralNumber.csproj", "{39223117-B809-4F4E-A772-CF4B64020438}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebVersionIntegralNumber", "..\WebVersionIntegralNumber\WebVersionIntegralNumber.csproj", "{39223117-B809-4F4E-A772-CF4B64020438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppIntegralNumber", "..\WpfAppIntegralNumber\WpfAppIntegralNumber.csproj", "{32A623CA-D870-4C92-9FFD-DBDC3448B4F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{39223117-B809-4F4E-A772-CF4B64020438}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39223117-B809-4F4E-A772-CF4B64020438}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39223117-B809-4F4E-A772-CF4B64020438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A623CA-D870-4C92-9FFD-DBDC3448B4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A623CA-D870-4C92-9FFD-DBDC3448B4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A623CA-D870-4C92-9FFD-DBDC3448B4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A623CA-D870-4C92-9FFD-DBDC3448B4F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
